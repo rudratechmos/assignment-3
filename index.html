@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/9637198f14.js" crossorigin="anonymous"></script>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>    
     <!-- daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,7 +31,48 @@
     </script>
 </head>
 <body class="font-manrope">
-  <header></header>
+  <header class="md:container mx-auto mt-2">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start gap-2">
+          <i class="ri-arrow-right-up-line text-xl text-black bg-primary-color border rounded-full px-1"></i></a>
+          <a class="text-3xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal">
+            <li><a class="font-bold text-base">Home</a></li>
+            <li><a class="text-gray-400 text-base">Services</a></li>
+            <li><a class="text-gray-400 text-base">Portfolio</a></li>
+            <li><a class="text-gray-400 text-base">Blogs</a></li>
+            <li><a class="text-gray-400 text-base">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="space-x-5 hidden lg:flex justify-center items-center">
+            <a href="#"><i class="ri-search-line text-xl border rounded-full p-2"></i></a>
+            <a href="#"><i class="ri-shopping-cart-2-line text-xl border rounded-full p-2"></i></a>
+            <a class="btn bg-primary-color rounded-full font-bold text-xl">
+              Book Consult 
+              <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i></a>
+          </div>
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="ri-menu-line text-xl border rounded-full px-2 py-1"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-[1] shadow">
+              <li><a>Home</a></li>
+              <li><a class="text-gray-400">Services</a></li>
+              <li><a class="text-gray-400">Portfolio</a></li>
+              <li><a class="text-gray-400">Blogs</a></li>
+              <li><a class="text-gray-400">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main></main>
 
