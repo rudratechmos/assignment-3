@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,9 @@
                 clifford: '#da373d',
                 'primary-color': '#ABEF5F',
                 'secondary-color': 'rgba(171, 239, 95, 0.5)',
+                'primary-color-bg': '#E9E9E9',
+                'gray-1': '#737373',
+                'gray-2': '#494949',
               },
               fontFamily: {
                 manrope: ['Manrope', 'sans-serif'],
@@ -30,7 +33,7 @@
         }
     </script>
 </head>
-<body class="font-manrope">
+<body class="font-manrope overflow-x-hidden">
   <header class="max-w-screen-xl mx-auto mt-2">
     <nav>
       <div class="navbar bg-base-100">
@@ -41,10 +44,10 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal">
             <li><a class="font-bold text-base">Home</a></li>
-            <li><a class="text-gray-400 text-base">Services</a></li>
-            <li><a class="text-gray-400 text-base">Portfolio</a></li>
-            <li><a class="text-gray-400 text-base">Blogs</a></li>
-            <li><a class="text-gray-400 text-base">Contact Us</a></li>
+            <li><a class="text-gray-1 text-base">Services</a></li>
+            <li><a class="text-gray-1 text-base">Portfolio</a></li>
+            <li><a class="text-gray-1 text-base">Blogs</a></li>
+            <li><a class="text-gray-1 text-base">Contact Us</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -73,18 +76,63 @@
       </div>
     </nav>
     <!-- barn house-->
-    <div class="flex flex-col justify-between items-center gap-6 mt-2">
-      <img src="assets/banner.png" alt="">
+    <div class="flex flex-col justify-between items-center gap-6 mt-9 mb-16 lg:mb-28">
+      <img  class="w-[260px] lg:w-[570px]" src="assets/banner.png" alt="">
       <h1 class="w-3/4 text-3xl lg:text-6xl font-bold text-center">A barn house of this design has a striking appearance</h1>
-      <p class="w-3/4 text-sm lg:text-base text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-      <button class="btn bg-secondary-color text-xl font-bold rounded-full">
+      <p class="w-3/4 text-sm lg:text-base text-center text-gray-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+      <button class="btn bg-secondary-color text-xl font-bold rounded-full px-16 lg:px-6">
         View Details
         <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full px-1"></i></a>
       </button>
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <!-- about us section -->
+    <section class="w-full bg-primary-color-bg">
+      <div class="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:gap-9 p-8 lg:p-24">
+        <!-- text  -->
+        <div class="lg:w-[560px] flex flex-col justify-center items-center lg:items-start">
+          <div class="relative">
+            <img class="hidden lg:flex absolute lg:-left-14 lg:-top-16" src="assets/Vector.png" alt="">
+            <button class="text-base font-bold border rounded-full bg-white py-1 px-2 w-[120px] ">
+              <i class="ri-arrow-right-line"></i>
+              About Us
+            </button>
+          </div>
+          <div>
+            <h1 class="font-extrabold text-2xl lg:text-4xl my-4 lg:my-6 text-center lg:text-start">We design thoughtful,<br> liveable spaces</h1>
+            <p class="text-sm font-medium text-gray-2 mb-4 lg:mb-6 text-center lg:text-start">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <!-- card 1 -->
+          <div class="flex lg:justify-center lg:items-center p-6 bg-white border rounded-2xl mb-6 gap-5">
+            <div>
+              <img src="assets/commercial.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-base lg:text-xl font-bold mb-1">Commercial</h3>
+              <p class="text-base font-medium text-gray-1">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="flex lg:justify-center lg:items-center p-6 bg-white border rounded-2xl gap-5">
+            <div>
+              <img src="assets/residential.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-base lg:text-xl font-bold mb-1">Residential</h3>
+              <p class="text-base font-medium text-gray-1">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+        <!-- image  -->
+        <div>
+          <img class="w-[335px] h-[223px] lg:h-[545px] lg:w-[573px]" src="assets/Rectangle.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer></footer>
 </body>
