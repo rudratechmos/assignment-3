@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="overflow-x-hidden">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,7 @@
                 clifford: '#da373d',
                 'primary-color': '#ABEF5F',
                 'secondary-color': 'rgba(171, 239, 95, 0.5)',
+                'tertiary-color': 'rgba(171, 239, 95, 0.2)',
                 'primary-color-bg': '#E9E9E9',
                 'gray-1': '#737373',
                 'gray-2': '#494949',
@@ -37,7 +38,7 @@
         }
     </script>
 </head>
-<body class="font-manrope overflow-x-hidden">
+<body class="font-manrope">
   <header class="max-w-screen-xl mx-auto mt-2">
     <nav>
       <div class="navbar bg-base-100">
@@ -138,7 +139,7 @@
     </section>
 
     <!-- work process section -->
-    <section class="w-full bg-primary-color-bg">
+    <section class="w-full bg-primary-color-bg py-24">
       <div class="flex flex-col justify-center items-center">
         <button class="text-base font-bold border rounded-full bg-white py-1 px-4">
           <i class="ri-arrow-right-line"></i>
@@ -166,6 +167,73 @@
             <img src="assets/budget-planning.png" alt="">
             <h3 class="text-xl font-extrabold">Budget Planning</h3>
             <p class="text-base font-medium gray-1">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest portfolio section  -->
+    <section class="flex flex-col justify-center items-center mt-11 lg:mt-24">
+      <button class="text-base font-bold border rounded-full bg-tertiary-color py-1 px-4">
+        <i class="ri-arrow-right-line"></i>
+        Explore our Latest works
+      </button>
+      <h1 class="font-extrabold text-2xl lg:text-4xl mt-4">Our Latest Portfolio</h1>
+      <p class="w-3/4 lg:w-2/5 text-center text-sm lg:text-base font-medium text-gray-2 mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      <!-- cards -->
+      <div class="flex flex-col justify-center items-center gap-6 mt-8">
+        <!-- first row  -->
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- card 1 -->
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-6 border p-6 rounded-2xl w-[335px] lg:w-[772px]">
+            <div>
+              <img class="w-[287px] lg:w-[260px] h-[191px] lg:h-[175px]" src="assets/img1.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold text-gray-2">Commercial</h3>
+              <p class="w-[287px] lg:w-[440px] gray-1 font-medium my-2">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+              <button class="btn bg-white text-xl font-bold rounded-full p-1">
+                View Details
+                <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full px-1"></i></a>
+              </button>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="w-[335px] lg:w-[374px] border p-6 rounded-2xl">
+            <img class="w-[295px] lg:w-[326px] h-[197px] lg:h-[179px]" src="assets/img2.png" alt="">
+          </div>
+        </div>
+        <!-- second row  -->
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- card 3 -->
+          <div class="w-[335px] lg:w-[274px] border p-6 rounded-2xl hidden lg:block">
+            <img class="w-[295px] lg:w-[226px] h-[197px] lg:h-[179px]" src="assets/img3.png" alt="">
+          </div>
+          <!-- card 5 -->
+          <div class="w-[335px] lg:w-[274px] border p-6 rounded-2xl lg:hidden">
+            <img class="w-[295px] lg:w-[226px] h-[197px] lg:h-[179px]" src="assets/img5.png" alt="">
+          </div>
+          <!-- card 4 -->
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-6 border p-6 rounded-2xl w-[335px] lg:w-[573px]">
+            <div>
+              <img class="w-[287px] lg:w-[260px] h-[191px] lg:h-[175px]" src="assets/img4.png" alt="">
+            </div>
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold text-gray-2">Commercial</h3>
+              <p class="w-[287px] lg:w-[241px] gray-1 font-medium my-2">The barn house captivates with its blend of rustic charm and modern.</p>
+              <button class="btn bg-white text-xl font-bold rounded-full p-1">
+                View Details
+                <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full px-1"></i></a>
+              </button>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="w-[335px] lg:w-[274px] border p-6 rounded-2xl lg:hidden">
+            <img class="w-[295px] lg:w-[226px] h-[197px] lg:h-[179px]" src="assets/img3.png" alt="">
+          </div>
+          <!-- card 5 -->
+          <div class="w-[335px] lg:w-[274px] border p-6 rounded-2xl">
+            <img class="w-[295px] lg:w-[226px] h-[197px] lg:h-[179px]" src="assets/img5.png" alt="">
           </div>
         </div>
       </div>
