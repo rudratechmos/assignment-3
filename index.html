@@ -25,6 +25,7 @@
                 'primary-color-bg': '#E9E9E9',
                 'gray-1': '#737373',
                 'gray-2': '#494949',
+                'gray-3': '#A0A0A0',
                 'pink-1': '#E7C1D3',
                 'yellow-1': '#EFDA6E',
                 'green-1': '#A4DAC3',
@@ -32,6 +33,9 @@
               },
               fontFamily: {
                 manrope: ['Manrope', 'sans-serif'],
+              },
+              backgroundImage: {
+                'bg-1': "url('/assets/bg.jpg')"
               },
             },
           },
@@ -61,7 +65,8 @@
             <a href="#"><i class="ri-shopping-cart-2-line text-xl border rounded-full p-2"></i></a>
             <a class="btn bg-primary-color rounded-full font-bold text-xl">
               Book Consult 
-              <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i></a>
+              <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i>
+            </a>
           </div>
           <div class="dropdown dropdown-end lg:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -236,6 +241,39 @@
             <img class="w-[295px] lg:w-[226px] h-[197px] lg:h-[179px]" src="assets/img5.png" alt="">
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- discuss section  -->
+    <section class="w-full mt-8 lg:mt-24 bg-[url('/assets/bg.jpg')] h-[919px] lg:h-[910px] bg-cover bg-no-repeat bg-center">
+      <div class="flex flex-col justify-center items-center">
+        <button class="text-base font-bold border rounded-full bg-tertiary-color py-1 px-4 mt-8 lg:mt-28">
+          <i class="ri-arrow-right-line"></i>
+          Let’s Connect
+        </button>
+        <h1 class="w-3/4 lg:w-full font-extrabold text-2xl lg:text-4xl mt-4 text-center">Let’s Discuss Next Project</h1>
+        <p class="w-3/4 lg:w-2/5 text-center text-sm lg:text-base font-medium text-gray-2 mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <!-- form  -->
+        <div class="space-y-5 mt-8">
+          <!-- first row  -->
+          <div class="gap-6 flex flex-col lg:flex-row">
+            <input class="w-[327px] lg:w-[473px] p-5 rounded-full gray-3" type="text" placeholder="First Name*">
+            <input class="w-[327px] lg:w-[473px] p-5 rounded-full gray-3" type="text" placeholder="Last Name*">
+          </div>
+          <!-- second row  -->
+          <div class="gap-6 flex flex-col lg:flex-row">
+            <input class="w-[327px] lg:w-[473px] p-5 rounded-full gray-3" type="number" placeholder="Phone Number*">
+            <input class="w-[327px] lg:w-[473px] p-5 rounded-full gray-3" type="email" placeholder="Email Number*">
+          </div>
+          <!-- third row  -->
+          <div>
+            <textarea class="w-[327px] lg:w-[970px] h-[240px] rounded-3xl p-5 gray-3" placeholder="Write your message here"></textarea>
+          </div>
+        </div>
+        <a class="btn bg-primary-color rounded-full font-bold text-xl mt-6 lg:mt-8 w-[330px] lg:w-[975px]">
+          Send Mail
+          <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i>
+        </a>
       </div>
     </section>
   </main>
