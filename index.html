@@ -23,6 +23,7 @@
                 'secondary-color': 'rgba(171, 239, 95, 0.5)',
                 'tertiary-color': 'rgba(171, 239, 95, 0.2)',
                 'primary-color-bg': '#E9E9E9',
+                'secondary-color-bg': '#1C1C1C',
                 'gray-1': '#737373',
                 'gray-2': '#494949',
                 'gray-3': '#A0A0A0',
@@ -47,7 +48,7 @@
     <nav>
       <div class="navbar bg-base-100">
         <div class="navbar-start gap-2">
-          <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full px-1"></i></a>
+          <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full border-none px-1"></i></a>
           <a class="text-3xl font-bold">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -63,7 +64,7 @@
           <div class="space-x-5 hidden lg:flex justify-center items-center">
             <a href="#"><i class="ri-search-line text-xl border rounded-full p-2"></i></a>
             <a href="#"><i class="ri-shopping-cart-2-line text-xl border rounded-full p-2"></i></a>
-            <a class="btn bg-primary-color rounded-full font-bold text-xl">
+            <a class="btn bg-primary-color rounded-full border-none font-bold text-xl">
               Book Consult 
               <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i>
             </a>
@@ -245,7 +246,7 @@
     </section>
 
     <!-- discuss section  -->
-    <section class="w-full mt-8 lg:mt-24 bg-[url('./assets/bg.jpg')] h-[919px] lg:h-[910px] bg-cover bg-no-repeat bg-center">
+    <section class="w-full mt-8 lg:mt-24 bg-[url('./assets/bg.jpg')] h-[969px] lg:h-[910px] bg-cover bg-no-repeat bg-center">
       <div class="flex flex-col justify-center items-center">
         <button class="text-base font-bold border rounded-full bg-tertiary-color py-1 px-4 mt-8 lg:mt-28">
           <i class="ri-arrow-right-line"></i>
@@ -278,6 +279,23 @@
     </section>
   </main>
 
-  <footer></footer>
+  <footer class="w-full bg-secondary-color-bg py-24 flex flex-col justify-center items-center">
+    <div class="flex justify-center items-center gap-2">
+      <i class="ri-arrow-right-up-line font-thin text-xl text-black bg-primary-color border rounded-full px-1 border-none"></i></a>
+      <a class="text-3xl text-white font-bold">Rinterio</a>
+    </div>
+    <p class="w-3/4 lg:w-2/5 text-center text-sm lg:text-base font-medium text-gray-1 mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    <ul class="menu flex flex-col lg:flex-row gap-8 lg:gap-28 mt-8 lg:mt-12 justify-center items-center">
+      <li><a class="font-medium text-base text-gray-200">Home</a></li>
+      <li><a class="font-normal text-base text-gray-300">Services</a></li>
+      <li><a class="font-normal text-base text-gray-300">Portfolio</a></li>
+      <li><a class="font-normal text-base text-gray-300">Blogs</a></li>
+      <li><a class="font-normal text-base text-gray-300">Contact Us</a></li>
+    </ul>
+    <a class="btn bg-primary-color rounded-full border-none font-bold text-xl mt-12 w-[311px] lg:w-[211px]">
+      Book Consult 
+      <i class="ri-arrow-right-up-line font-thin text-white bg-black border rounded-full px-1"></i>
+    </a>
+  </footer>
 </body>
 </html>
